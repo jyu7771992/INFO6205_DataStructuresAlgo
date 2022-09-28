@@ -1,5 +1,5 @@
 package LinkedList;
-class Solution {
+class SolutionReomove {
     public ListNode RemoveLinkedListElements(ListNode head, int val) {
         //pick the node-predecessor prev of the node to delete
         // set its next pointer to point to the node next to the one to delete

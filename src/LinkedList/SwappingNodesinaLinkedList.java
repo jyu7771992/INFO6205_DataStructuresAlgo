@@ -1,6 +1,6 @@
 package LinkedList;
 
-class Solution{
+class SolutionSwap{
     public ListNode swapNodes(ListNode head, int k) {
         int list_len = 0;
         ListNode prevNode = null;

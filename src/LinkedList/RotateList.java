@@ -1,6 +1,6 @@
 package LinkedList;
 
-class Solution {
+class SolutionRotate {
     public ListNode rotateList(ListNode head, int k){
         //base case
 
@@ -18,7 +18,7 @@ class Solution {
         //new tail: n - k % n - 1 th, new head = n - k % n
         ListNode new_tail = head;
         for(int i = 0; i < n - k % n - 1; i++){
-            new_tail = new_tail.next
+            new_tail = new_tail.next;
         }
         ListNode new_head = new_tail.next;
 
