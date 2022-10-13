@@ -2,7 +2,7 @@ package Tree;
 
 import apple.laf.JRSUIUtils;
 
-class Solution{
+class Solution2{
     public boolean isSymmetric(TreeNode root) {
         //https://leetcode.com/problems/symmetric-tree/
         //recursive
