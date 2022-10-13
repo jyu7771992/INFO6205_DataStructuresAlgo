@@ -14,7 +14,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 //one queue + level size measurements
 //https://leetcode.com/problems/binary-tree-right-side-view/
-class Solution {
+class Solution8 {
     public List<Integer> rightSideView(TreeNode root) {
         //find the tree
         //edge case
