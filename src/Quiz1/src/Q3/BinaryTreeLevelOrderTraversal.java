@@ -10,13 +10,13 @@ class Solution2{
         List<List<Integer>> levelRes = new ArrayList<>();
         if (root == null) return levelRes;
 
-        Queue<TreeNode> queuePack = new LinkedList<>();
+        Queue<TreeNode> queuePack = new LinkedList<TreeNode>();
         queuePack.add(root);
         int curlevel = 0;
         //check if queue is empty or not
         while ( !queuePack.isEmpty() ) {
             //define new array in the res to start
-            levelRes.add(new ArrayList<>());
+            levelRes.add(new ArrayList<Integer>());
             int level_length = queuePack.size(); // define the current length of currentLevel
             //go through the current queue
             for(int i = 0; i < level_length; i++) {
