@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-
+//permutations
 class Solution5{
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();

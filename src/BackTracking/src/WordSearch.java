@@ -1,3 +1,4 @@
+//worsearch
 class Solution7 {
     private boolean found = false;
     public boolean exist(char[][] board, String word) {
@@ -15,13 +16,11 @@ class Solution7 {
         // logic
         visited[r][c] = true;
         ptr++;
-
         // base case
         if(ptr == word.length()) {
             found = true;
             return;
         }
-
         // dfs
         if(r + 1 < b.length && !visited[r + 1][c] && word.charAt(ptr) == b[r+1][c]) // down
             dfs(b, visited, word, r + 1, c, ptr);
@@ -31,7 +30,6 @@ class Solution7 {
             dfs(b, visited, word, r, c + 1, ptr);
         if(!found && c - 1 >= 0 && !visited[r][c - 1] && word.charAt(ptr) == b[r][c-1]) // left
             dfs(b, visited, word, r, c - 1, ptr);
-
         // backtrack
         visited[r][c] = false;
         ptr--;

@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-
+//numbers with same consecutive differences
 class Solution4 {
     public int[] numsSameConsecDiff(int N, int K) {
         if (N == 1)

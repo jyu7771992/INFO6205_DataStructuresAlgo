@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-
+//generate parenthese
 class Solution2{
     public List<String> generateParenthesis(int n) {
         List<String> ans = new ArrayList();
