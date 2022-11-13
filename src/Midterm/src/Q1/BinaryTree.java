@@ -36,6 +36,7 @@ public class BinaryTree <T> {
                 if(preNode.nextLeft != null){
                     preNode = node.left;
                 }
+                preNode = node;
             }
             else{
                 // new level
