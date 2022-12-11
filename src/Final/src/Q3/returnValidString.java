@@ -23,14 +23,17 @@ public class returnValidString {
         while (!stack.isEmpty()) {
             indexList.add(stack.pop());
         }
-
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < str.length(); i++) {
+        //
+        StringBuilder stringbuilder = new StringBuilder();
+        for (int j = 0; j < str.length(); j++) {
             //check if the idx is in indexList or not
-            if (!indexList.contains(i)) {
-                sb.append(str.charAt(i)); // add the string
+            if (!indexList.contains(j)) {
+                stringbuilder.append(str.charAt(j)); // add the string
             }
         }
-        return sb.toString();
+        return stringbuilder.toString();
     }
 }
+
+//Time Complexity:
+//Space Complexity:

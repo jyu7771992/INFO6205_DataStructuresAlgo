@@ -7,10 +7,10 @@ public class NumberOfIsland {
 
     void dfs(char[][] grid, int r, int c) {
         //define the range of nr & nc
-        int nr = grid.length;
-        int nc = grid[0].length;
+        int row = grid.length;
+        int col = grid[0].length;
         // base case the range of grid
-        if (r < 0 || c < 0 || r >= nr || c >= nc || grid[r][c] == '0') {
+        if (r < 0 || c < 0 || r >= row || c >= col || grid[r][c] == '0') {
             return;
         }
         //if visited, mark as 0
@@ -30,17 +30,17 @@ public class NumberOfIsland {
         // define the range of grid
         int row = grid.length;
         int col = grid[0].length;
-        int num_islands = 0; // count the islands
-        for (int r = 0; r < row; ++r) {
-            for (int c = 0; c < col; ++c) {
+        int count = 0; // count the islands
+        for (int r = 0; r < row; r++) {
+            for (int c = 0; c < col; c++) {
                 if (grid[r][c] == '1') { // if check the position marked as islands
-                    ++num_islands;
+                    ++count;
                     dfs(grid, r, c); // implement the method of tracking each position in the grid
                 }
             }
         }
 
-        return num_islands;
+        return count;
     }
 }
 //Time Complexity: O(M*N)
